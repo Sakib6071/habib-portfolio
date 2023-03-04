@@ -25,6 +25,10 @@ const About = () => {
                         <p className='overlay ease-in duration-300 absolute bottom-0 left-0 right-0 overflow-hidden w-full h-0 '><span className='inner-item'>Bootstrap5</span></p>
                     </div>
                     <div className='p-4 relative custom-shadow image-container '>
+                        <img width={'50px'} src={'https://i.ibb.co/vZm7Scd/Tailwind-CSS-Logo-svg.png'} alt="" />
+                        <p className='overlay ease-in duration-300 absolute bottom-0 left-0 right-0 overflow-hidden w-full h-0 '><span className='inner-item'>Tailwind</span></p>
+                    </div>
+                    <div className='p-4 relative custom-shadow image-container '>
                         <img width={'50px'} src={'https://i.ibb.co/7ynK6Gw/js.png'} alt="" />
                         <p className='overlay ease-in duration-300 absolute bottom-0 left-0 right-0 overflow-hidden w-full h-0 '><span className='inner-item'>JavaScript</span></p>
                     </div>
