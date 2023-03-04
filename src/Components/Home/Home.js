@@ -81,7 +81,7 @@ const Home = () => {
           <img
             src={`https://i.ibb.co/bK0r7Kw/profile.jpg`}
             alt="Profile"
-            className="rounded-full border-2 p-4 border-green-400 w-1/2 flex items-center justify-center hover:border-blue-500"
+            className="rounded-full border-2 p-4 border-green-400 w-3/4 sm:w-1/2 flex items-center justify-center hover:border-blue-500"
           />
         </div>
         <div className="flip-box-back hidden lg:flex lg:absolute justify-center items-center">
