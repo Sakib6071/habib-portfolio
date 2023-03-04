@@ -13,7 +13,7 @@ const Home = () => {
   const { text } = useTypewriter({});
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 p-20 custom-bg text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 p-5 md:p-20 custom-bg text-white">
         <div className="text-left">
           <div className="text-6xl font-bold">
             <p>I am</p>

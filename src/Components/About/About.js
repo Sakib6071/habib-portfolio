@@ -4,7 +4,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-20 custom-bg text-white p-20'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-20 custom-bg text-white p-5 md:p-20'>
             <div>
                 <p className='text-4xl font-semibold my-5 text-green-400 border-l-8 pl-5 border-green-400 inline-block'>About Me</p>
                 <p className=' text-justify text-xl mt-5'>Hi there! My name is Habib Ullah, and I am a front end developer. I work in this field from 2020. I have a Bsc. in CSE degree from Green University Of Bangladesh, and I am constantly seeking to expand my knowledge and skills through ongoing education and training.</p>
