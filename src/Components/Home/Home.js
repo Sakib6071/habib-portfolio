@@ -75,12 +75,23 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flip-box">
+          <div className="flip-box-inner">
+          <div className="lg:absolute flip-box-front flex justify-center items-center">
           <img
             src={`https://i.ibb.co/bK0r7Kw/profile.jpg`}
             alt="Profile"
-            className="rounded-full border-2 p-4 border-green-400 w-1/2 flex items-center justify-center"
+            className="rounded-full border-2 p-4 border-green-400 w-1/2 flex items-center justify-center hover:border-blue-500"
           />
+        </div>
+        <div className="flip-box-back flex lg:absolute justify-center items-center">
+        <img
+            src={`https://i.ibb.co/k6MjbDY/IMG-20230304-132002-01-1.jpg`}
+            alt="Profile"
+            className="rounded-full border-2 p-4 border-green-400 w-1/2 flex items-center justify-center hover:border-blue-500"
+          />
+        </div>
+          </div>
         </div>
       </div>
     </>
