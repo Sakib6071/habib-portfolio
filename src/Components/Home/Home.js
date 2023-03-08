@@ -5,13 +5,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { useTypewriter, Typewriter } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 import cv from './cv.pdf'
 import "./Home.css";
 
 
 const Home = () => {
-  const { text } = useTypewriter({});
   function handleDownloadCV() {
     const link = document.createElement('a');
     link.href = cv;
