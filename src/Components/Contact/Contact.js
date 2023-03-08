@@ -13,13 +13,16 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const nameText = handleName.current.value;
+/*     const nameText = handleName.current.value;
     const emailText = handleName.current.value;
-    const messageText = handleName.current.value;
+    const messageText = handleName.current.value; */
+    const nameText = e.target.user_name.value;
+    const emailText = e.target.user_email.value;
+    const messageText = e.target.message.value;
     setName(nameText)
     setEmail(emailText)
     setMessage(messageText)
-    console.log(typeof(emailText));
+    console.log(emailText);
 
 if(name && email && message){
     setError('Message Sent')
@@ -46,7 +49,7 @@ else{
 }
   };
   return (
-    <div className="custom-bg  p-5 md:p-20">
+    <div id="contact" className="custom-bg  p-5 md:p-20">
       <div className="text-center md:text-left">
       <p className="text-4xl font-semibold my-5 text-green-400  border-b-4  pb-3 md:border-b-0 md:pb-0 text-center md:border-l-8 md:pl-5 border-green-400 inline-block">
         Contact
@@ -55,7 +58,7 @@ else{
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-20">
         <div>
           <img
-            className=" w-10/12 md:w-full mx-auto rounded-lg shadow-md shadow-green-900"
+            className=" w-10/12 md:w-full mx-auto rounded-lg custom-bg custom-shadow p-5"
             src={"https://i.ibb.co/Tmp0c10/contact.jpg"}
             alt="Contact"
           />

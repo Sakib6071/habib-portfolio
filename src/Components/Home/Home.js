@@ -6,14 +6,23 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useTypewriter, Typewriter } from "react-simple-typewriter";
+import cv from './cv.pdf'
 import "./Home.css";
 
 
 const Home = () => {
   const { text } = useTypewriter({});
+  function handleDownloadCV() {
+    const link = document.createElement('a');
+    link.href = cv;
+    link.download = 'cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 p-5 md:p-20 custom-bg text-white">
+      <div id="home" className="grid grid-cols-1 md:grid-cols-2 gap-y-20 py-36 px-2 md:px-20 custom-bg text-white">
         <div className="text-left">
           <div className="text-6xl font-bold">
             <p>I am</p>
@@ -32,7 +41,7 @@ const Home = () => {
           />
             </p>
           </div>
-          <div className="flex gap-5 mt-8 lg:mt-14 justify-center md:justify-start">
+          <div className="flex gap-10 mt-8 lg:mt-14 justify-center md:justify-start">
             <div>
               <a
                 href="https://www.facebook.com/SakibHabibUllah"
@@ -73,6 +82,9 @@ const Home = () => {
                 <FontAwesomeIcon icon={faGithub} size={"3x"}></FontAwesomeIcon>
               </a>
             </div>
+          </div>
+          <div className="text-center pt-16">
+            <button onClick={handleDownloadCV} className="custom-shadow font-semibold px-10 py-5 text-2xl text-green-400">Download Resume/CV</button>
           </div>
         </div>
         <div className="flip-box">

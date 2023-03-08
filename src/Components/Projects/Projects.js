@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="custom-bg py-10 text-white">
-      <div className="text-center pb-5">
+    <div id="project" className="custom-bg py-16 text-white">
+      <div className="text-center">
         <p className="text-4xl font-semibold my-5 text-green-400 border-b-4 pb-3 border-green-400 inline-block text-center">
           Projects
         </p>
