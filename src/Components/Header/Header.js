@@ -47,7 +47,7 @@ function Header() {
           </a>
         </div>
         <div className="hidden lg:block">
-          <a href="#contact" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green-600 hover:bg-white mt-4 lg:mt-0 bg-green-600" onClick={handleLinkClick}>
+          <a href="#contact" className="inline-block px-4 py-2 leading-none text-base rounded text-white  hover:text-green-600 hover:border hover:bg-transparent  mt-4 lg:mt-0 bg-green-600" onClick={handleLinkClick}>
             Contact
           </a>
         </div>
