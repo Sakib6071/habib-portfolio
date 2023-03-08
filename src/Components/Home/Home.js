@@ -21,7 +21,7 @@ const Home = () => {
   }
   return (
     <>
-      <div id="home" className="grid grid-cols-1 md:grid-cols-2 gap-y-20 py-36 px-2 md:px-20 custom-bg text-white">
+      <div id="home" className="grid grid-cols-1 md:grid-cols-2 gap-y-20 pt-52 pb-10 px-2 md:px-20 custom-bg text-white">
         <div className="text-left">
           <div className="text-6xl font-bold">
             <p>I am</p>

@@ -67,7 +67,7 @@ else{
           <form className=" w-10/12 mx-auto" ref={form} onSubmit={sendEmail}>
             <input
             ref={handleName}
-              className=" outline-none w-full p-3 rounded-lg custom-bg custom-shadow text-white"
+              className=" outline-none w-full p-3 rounded-lg custom-bg custom-shadow text-green-400 font-semibold"
               type="text"
               name="user_name"
               placeholder="Your Name"
@@ -79,7 +79,7 @@ else{
               className=" outline-none w-full p-3 rounded-lg custom-bg custom-shadow text-white"
               type="email"
               name="user_email"
-              placeholder="Your email"
+              placeholder="Your Email"
             />
             <br />
             <br />
@@ -88,7 +88,7 @@ else{
               className=" outline-none w-full p-3 rounded-lg custom-bg custom-shadow text-white"
               name="message"
               rows={5}
-              placeholder="Write you message"
+              placeholder="Write Your Message"
             />
             <br />
             <div className=" text-right mt-4">
