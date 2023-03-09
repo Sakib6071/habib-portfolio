@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div id="project" className="custom-bg py-16 text-white">
       <div className="text-center">
@@ -9,7 +14,7 @@ const Projects = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 md:gap-x-5 p-5 md:px-20">
-        <div className=" image-container relative">
+        <div data-aos="zoom-in" className="custom-shadow p-3 image-container relative">
           <img
             src={"https://i.ibb.co/K20Btws/project1.png"}
             alt="project banner"
@@ -27,7 +32,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" image-container relative">
+        <div data-aos="zoom-in" className="custom-shadow p-3 image-container relative">
           <img
             src={"https://i.ibb.co/y8Bfw5r/project2.png"}
             alt="project banner"
@@ -43,7 +48,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className=" image-container relative">
+        <div data-aos="zoom-in" className="custom-shadow p-3 image-container relative">
           <img
             src={"https://i.ibb.co/W6D75sS/project3.png"}
             alt="project banner"

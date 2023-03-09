@@ -4,13 +4,18 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import cv from './cv.pdf'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Home.css";
 
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   function handleDownloadCV() {
     const link = document.createElement('a');
     link.href = cv;
@@ -21,7 +26,7 @@ const Home = () => {
   }
   return (
     <>
-      <div id="home" className="grid grid-cols-1 md:grid-cols-2 gap-y-20 pt-52 pb-10 px-2 md:px-20 custom-bg text-white">
+      <div id="home" className="grid grid-cols-1 md:grid-cols-2 gap-y-20 pt-40 md:pt-52 pb-10 px-4 md:px-20 custom-bg text-white">
         <div className="text-left">
           <div className="text-6xl font-bold">
             <p>I am</p>
@@ -41,7 +46,7 @@ const Home = () => {
             </p>
           </div>
           <div className="flex gap-9 mt-8 lg:mt-14 justify-center md:justify-start">
-            <div className="custom-shadow p-4 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
+            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
               <a
                 href="https://www.facebook.com/SakibHabibUllah"
                 target={"_blank"}
@@ -56,7 +61,7 @@ const Home = () => {
               </a>
             </div>
 
-            <div className="custom-shadow p-4 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
+            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
               {" "}
               <a
                 href="https://www.linkedin.com/in/habibullah6071/"
@@ -71,7 +76,7 @@ const Home = () => {
               </a>{" "}
             </div>
 
-            <div className="custom-shadow p-4 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
+            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
               {" "}
               <a
                 href="https://github.com/Sakib6071"
@@ -83,7 +88,7 @@ const Home = () => {
             </div>
           </div>
           <div className="text-center pt-16">
-            <button onClick={handleDownloadCV} className="custom-shadow font-semibold px-10 py-5 text-2xl text-green-400 border-2 border-transparent hover:border-green-400 hover:text-white rounded-lg">Download Resume/CV</button>
+            <button data-aos="zoom-out" onClick={handleDownloadCV} className="custom-shadow font-semibold px-10 py-3 text-xl md:text-2xl text-green-400 border-2 border-transparent hover:border-green-400 hover:text-white rounded-lg">Download Resume/CV</button>
           </div>
         </div>
         <div className="flip-box">

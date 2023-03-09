@@ -1,9 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from "@emailjs/browser";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   
   const form = useRef();
   
@@ -85,14 +90,14 @@ else{
       </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-20">
-        <div>
+        <div data-aos="fade-up">
           <img
             className=" w-10/12 md:w-full mx-auto rounded-lg custom-bg custom-shadow p-5"
             src={"https://i.ibb.co/Tmp0c10/contact.jpg"}
             alt="Contact"
           />
         </div>
-        <div className=" flex items-center justify-center">
+        <div data-aos="fade-down" className=" flex items-center justify-center">
           <form className=" w-10/12 mx-auto" ref={form} onSubmit={sendEmail} autoComplete="new-password">
             <input
               className=" outline-none w-full p-3 rounded-lg custom-bg custom-shadow text-green-400 font-semibold"

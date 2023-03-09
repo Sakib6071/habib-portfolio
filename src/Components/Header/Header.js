@@ -19,7 +19,8 @@ function Header() {
   }
 
   return (
-    <header className=" shadow-sm custom-shadow fixed top-0 w-full z-50 flex items-center justify-between flex-wrap custom-bg py-6 px-6 lg:px-20">
+    <header className='fixed top-0 w-full z-50 custom-bg'>
+      <div className=" mt-2 mx-2 shadow-sm custom-shadow  left-2  flex items-center justify-between flex-wrap py-6 px-6 lg:px-20">
       <div className="flex items-center flex-shrink-0 text-white mr-10">
         <img className='w-24' src={logo} alt="logo" />
       </div>
@@ -52,6 +53,7 @@ function Header() {
           </a>
         </div>
       </div>
+    </div>
     </header>
   );
 }
