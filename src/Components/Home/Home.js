@@ -40,8 +40,8 @@ const Home = () => {
           />
             </p>
           </div>
-          <div className="flex gap-10 mt-8 lg:mt-14 justify-center md:justify-start">
-            <div>
+          <div className="flex gap-9 mt-8 lg:mt-14 justify-center md:justify-start">
+            <div className="custom-shadow p-4 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
               <a
                 href="https://www.facebook.com/SakibHabibUllah"
                 target={"_blank"}
@@ -56,7 +56,7 @@ const Home = () => {
               </a>
             </div>
 
-            <div>
+            <div className="custom-shadow p-4 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
               {" "}
               <a
                 href="https://www.linkedin.com/in/habibullah6071/"
@@ -71,7 +71,7 @@ const Home = () => {
               </a>{" "}
             </div>
 
-            <div>
+            <div className="custom-shadow p-4 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
               {" "}
               <a
                 href="https://github.com/Sakib6071"
@@ -83,7 +83,7 @@ const Home = () => {
             </div>
           </div>
           <div className="text-center pt-16">
-            <button onClick={handleDownloadCV} className="custom-shadow font-semibold px-10 py-5 text-2xl text-green-400">Download Resume/CV</button>
+            <button onClick={handleDownloadCV} className="custom-shadow font-semibold px-10 py-5 text-2xl text-green-400 border-2 border-transparent hover:border-green-400 hover:text-white rounded-lg">Download Resume/CV</button>
           </div>
         </div>
         <div className="flip-box">
@@ -92,14 +92,14 @@ const Home = () => {
           <img
             src={`https://i.ibb.co/bK0r7Kw/profile.jpg`}
             alt="Profile"
-            className="rounded-full border-2 p-4 border-green-400 w-3/4 sm:w-1/2 flex items-center justify-center hover:border-blue-500"
+            className="rounded-full border-2 p-4 border-green-400 w-3/4 sm:w-1/2 flex items-center justify-center hover:border-white"
           />
         </div>
         <div className="flip-box-back hidden lg:flex lg:absolute justify-center items-center">
         <img
             src={`https://i.ibb.co/k6MjbDY/IMG-20230304-132002-01-1.jpg`}
             alt="Profile"
-            className="rounded-full border-2 p-4 border-green-400 w-1/2 flex items-center justify-center hover:border-blue-500"
+            className="rounded-full border-2 p-4 border-green-400 w-1/2 flex items-center justify-center hover:border-white"
           />
         </div>
           </div>
