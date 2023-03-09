@@ -2,6 +2,7 @@ import {
   faFacebook,
   faGithub,
   faLinkedin,
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect } from "react";
@@ -46,7 +47,7 @@ const Home = () => {
             </p>
           </div>
           <div className="flex gap-9 mt-8 lg:mt-14 justify-center md:justify-start">
-            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
+            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-lg">
               <a
                 href="https://www.facebook.com/SakibHabibUllah"
                 target={"_blank"}
@@ -61,7 +62,7 @@ const Home = () => {
               </a>
             </div>
 
-            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
+            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-lg">
               {" "}
               <a
                 href="https://www.linkedin.com/in/habibullah6071/"
@@ -76,7 +77,7 @@ const Home = () => {
               </a>{" "}
             </div>
 
-            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-full">
+            <div data-aos="zoom-out" className="custom-shadow p-3 hover:bg-black border-2 hover:border-green-400 border-transparent rounded-lg">
               {" "}
               <a
                 href="https://github.com/Sakib6071"
